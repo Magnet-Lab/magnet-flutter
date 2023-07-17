@@ -1,0 +1,28 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    avoid_print: error # debugPrint나 log를 사용하도록 합니다.
+    curly_braces_in_flow_control_structures: error # 조건문이나 반복문에서 중괄호를 사용하도록 합니다.
+    always_use_package_imports: error # 패키지를 가져올 때 항상 패키지 이름을 포함하도록 합니다.
+    avoid_relative_lib_imports: error # 상대경로 가져오기를 허용하지 않도록 합니다.
+    prefer_double_quotes: error # 문자열은 항상 큰따옴표를 사용하도록 합니다.
+    prefer_const_constructors: error # 생성자를 사용할 때 항상 const를 사용하도록 합니다.
+    file_names: error # 파일 이름을 snake_case로 작성하도록 합니다.
+    use_key_in_widget_constructors: error # 위젯 생성자에 key를 사용하도록 합니다.
+    avoid_unnecessary_containers: warning # 불필요한 Container 위젯을 사용하지 않도록 합니다.
+    avoid_unused_constructor_parameters: warning # 사용하지 않는 생성자 파라미터를 허용하지 않도록 합니다.
+
+linter:
+  rules:
+    - avoid_print # https://dart-lang.github.io/linter/lints/avoid_print.html
+    - curly_braces_in_flow_control_structures # https://dart-lang.github.io/linter/lints/curly_braces_in_flow_control_structures.html
+    - avoid_unnecessary_containers # https://dart-lang.github.io/linter/lints/avoid_unnecessary_containers.html
+    - avoid_unused_constructor_parameters # https://dart-lang.github.io/linter/lints/avoid_unused_constructor_parameters.html
+    - prefer_double_quotes # https://dart-lang.github.io/linter/lints/prefer_double_quotes.html
+    - avoid_double_and_int_checks # https://dart-lang.github.io/linter/lints/avoid_double_and_int_checks.html
+    - prefer_const_constructors # https://dart-lang.github.io/linter/lints/prefer_const_constructors.html
+    - always_use_package_imports # https://dart-lang.github.io/linter/lints/always_use_package_imports.html
+    - avoid_relative_lib_imports # https://dart-lang.github.io/linter/lints/avoid_relative_lib_imports.html
+    - file_names # https://dart-lang.github.io/linter/lints/file_names.html
+    - use_key_in_widget_constructors # https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html
